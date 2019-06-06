@@ -1,85 +1,32 @@
-const maravilhosas = {
-  mulher:
+let maravilhosas = {
+  content: [
     {
-      'category': 'biography',
-      'description': '<p>A princesa angolana Zacimba Gaba foi vendida como escrava e acabou no estado do Esp&iacute;rito Santo, onde sofreu extrema viol&ecirc;ncia do senhor da escravos que a comprou e sentia inveja do seu t&iacute;tulo de realeza. Apesar disso tudo, foi uma guerreira que resistiu, vingou-se e provocou uma revolta das pessoas escravizadas contra a Casa Grande, liderando seu povo; um quilombo onde foi rainha.</p>',
-      'id': '5af8b1a14b197941cd524e22',
-      'metadata': {
-        'birthdate': 'Não informado',
-        'country': 'Angola',
-        'credits': 'Jarid Arraes',
-        'deathdate': 'Não informado',
-        'image': ''
-      },
-      'order': 1,
-      'slug': 'zacimba-gaba',
-      'title': 'Zacimba Gaba'
+      id: 'fo5st9or',
+      bio: 'Mariana Crioula foi, l&iacute;der de uma das maiores revoltas de escravos no Rio de Janeiro, na regi&atilde;o do Vale do Caf&eacute;, Mariana Crioula foi aclamada como rainha do seu povo ao lado de Manoel Congo, chamado de re.',
+      title: 'Mariana Crioula'
     },
 
-    'category': 'biography',
-      'description': '<p>A princesa angolana Zacimba Gaba foi vendida como escrava e acabou no estado do Esp&iacute;rito Santo, onde sofreu extrema viol&ecirc;ncia do senhor da escravos que a comprou e sentia inveja do seu t&iacute;tulo de realeza. Apesar disso tudo, foi uma guerreira que resistiu, vingou-se e provocou uma revolta das pessoas escravizadas contra a Casa Grande, liderando seu povo; um quilombo onde foi rainha.</p>',
-      'id': '5af8b1a14b197941cd524e22',
-      'metadata': {
-        'birthdate': 'Não informado',
-        'country': 'Angola',
-        'credits': 'Jarid Arraes',
-        'deathdate': 'Não informado',
-        'image': ''
-      },
-      'order': 1,
-      'slug': 'zacimba-gaba',
-      'title': 'Zacimba Gaba'
+    {
+      id: 'fo6st7or',
+      bio: 'Maria da Conceição Evaristo de Brito nasceu em Belo Horizonte, em 1946. De origem humilde, migrou para o Rio de Janeiro na década de 1970. Graduada em Letras pela UFRJ, trabalhou como professora da rede pública de ensino da capital fluminense. É Mestre em Literatura Brasileira pela PUC do Rio de Janeiro, com a dissertação Literatura Negra: uma poética de nossa afro-brasilidade (1996), e Doutora em Literatura Comparada na Universidade Federal Fluminense, com a tese Poemas malungos, cânticos irmãos (2011), na qual estuda as obras poéticas dos afro-brasileiros Nei Lopes e Edimilson de Almeida Pereira em confronto com a do angolano Agostinho Neto.',
+      image: 'https://firebasestorage.googleapis.com/v0/b/theblackwomanhistory.appspot.com/o/conceicao02.jpg?alt=media&token=210c11b4-39ef-4eb4-a93e-53d65f506e5e',
+      title: 'Conceição Evaristo'
+    },
+    {
+      id: '123o6s7o',
+      bio: 'Marielle Francisco da Silva, conhecida como Marielle Franco, foi uma soci&oacute;loga, feminista, militante dos direitos humanos e pol&iacute;tica brasileira. Filiada ao Partido Socialismo e Liberdade (PSOL), elegeu-se vereadora do Rio de Janeiro para a Legislatura 2017-2020, durante a elei&ccedil;&atilde;o municipal de 2016, com a quinta maior vota&ccedil;&atilde;o. Cr&iacute;tica da interven&ccedil;&atilde;o federal no Rio de Janeiro e da Pol&iacute;cia Militar, denunciava constantemente abusos de autoridade por parte de policiais contra moradores de comunidades carentes. Em 14 de mar&ccedil;o de 2018, foi assassinada a tiros.',
+      image: 'https://firebasestorage.googleapis.com/v0/b/theblackwomanhistory.appspot.com/o/2f3fbc90-4bff-11e8-9a00-792cd50cc28c-200px-Marielle_Franco.jpg?alt=media&token=a156f7a2-9c9c-4e62-860d-5ec8055e1d04',
+      title: 'Marielle Franco'
+    },
+    {
+      id: '2o8eg7or',
+      bio: 'Djamila Ta&iacute;s Ribeiro dos Santos &eacute; uma feminista e acad&ecirc;mica brasileira. &Eacute; pesquisadora e mestre em Filosofia Pol&iacute;tica pela Universidade Federal de S&atilde;o Paulo (Unifesp). Tornou-se conhecida no pa&iacute;s por seu ativismo na internet.</p><p>Em maio de 2016, foi nomeada secret&aacute;ria-adjunta de Direitos Humanos e Cidadania da cidade de S&atilde;o Paulo durante a gest&atilde;o do prefeito Fernando Haddad.</p>',
+      image: 'https://firebasestorage.googleapis.com/v0/b/theblackwomanhistory.appspot.com/o/909a86f0-4bff-11e8-9a1e-25847895d6ce-Djamila_Ribeiro.jpg?alt=media&token=e415c937-6372-4c0d-824d-62dde5f3af2d',
+      title: 'Djamila MAravilhosa Ribeiro'
+    }
+  ]
 }
 
-    'category': 'biography',
-      'description': '<p>Hil&aacute;ria Batista de Almeida, conhecida como Tia Ciata foi uma cozinheira e m&atilde;e de santo brasileira, considerada por muitos como uma das figuras influentes para o surgimento do samba carioca. Foi iniciada no candombl&eacute; em Salvador por Bangbosh&ecirc; Obitik&ocirc; e era filha de Oxum. No Rio de Janeiro, era Iyakeker&ecirc; na casa de Jo&atilde;o Alab&aacute;. Tamb&eacute;m ficou marcada como uma das principais animadoras da cultura negra nas nascentes favelas cariocas. Em sua casa na Pra&ccedil;a Onze era onde os sambistas se reuniam, foi criado o primeiro samba gravado em disco - &quot;Pelo Telefone&quot;- , uma composi&ccedil;&atilde;o de Donga e Mauro de Almeida, na voz do cantor Baiano, tamb&eacute;m nascido em Santo Amaro da Purifica&ccedil;&atilde;o.</p>',
-      'id': '5af8a330275ae72452d8460e',
-      'metadata': {
-        'birthdate': 1854,
-        'country': 'Brasil',
-        'credits': 'Wikipedia',
-        'deathdate': 1924,
-        'image': {
-          url: 'https://firebasestorage.googleapis.com/v0/b/theblackwomanhistory.appspot.com/o/9d601dc0-56ed-11e8-a098-e1c5d0edce44-download%20(3).jpg?alt=media&token=48d81a18-52c8-4230-aaca-752bde1dc7e9'
-        }
-      'order': 2,
-      'slug': 'tia-ciata',
-      'title': 'Tia Ciata'
-    }
-  }
-    {
-      'category': 'biography',
-      'description': '<p>A princesa angolana Zacimba Gaba foi vendida como escrava e acabou no estado do Esp&iacute;rito Santo, onde sofreu extrema viol&ecirc;ncia do senhor da escravos que a comprou e sentia inveja do seu t&iacute;tulo de realeza. Apesar disso tudo, foi uma guerreira que resistiu, vingou-se e provocou uma revolta das pessoas escravizadas contra a Casa Grande, liderando seu povo; um quilombo onde foi rainha.</p>',
-      'id': '5af8b1a14b197941cd524e22',
-      'metadata': {
-        'birthdate': 'Não informado',
-        'country': 'Angola',
-        'credits': 'Jarid Arraes',
-        'deathdate': 'Não informado',
-        'image': ''
-      },
-      'order': 1,
-      'slug': 'zacimba-gaba',
-      'title': 'Zacimba Gaba'
-    }
-    {
-      'category': 'biography',
-      'description': '<p>Hil&aacute;ria Batista de Almeida, conhecida como Tia Ciata foi uma cozinheira e m&atilde;e de santo brasileira, considerada por muitos como uma das figuras influentes para o surgimento do samba carioca. Foi iniciada no candombl&eacute; em Salvador por Bangbosh&ecirc; Obitik&ocirc; e era filha de Oxum. No Rio de Janeiro, era Iyakeker&ecirc; na casa de Jo&atilde;o Alab&aacute;. Tamb&eacute;m ficou marcada como uma das principais animadoras da cultura negra nas nascentes favelas cariocas. Em sua casa na Pra&ccedil;a Onze era onde os sambistas se reuniam, foi criado o primeiro samba gravado em disco - &quot;Pelo Telefone&quot;- , uma composi&ccedil;&atilde;o de Donga e Mauro de Almeida, na voz do cantor Baiano, tamb&eacute;m nascido em Santo Amaro da Purifica&ccedil;&atilde;o.</p>',
-      'id': '5af8a330275ae72452d8460e',
-      'metadata': {
-        'birthdate': 1854,
-        'country': 'Brasil',
-        'credits': 'Wikipedia',
-        'deathdate': 1924,
-        'image': {
-          url: 'https://firebasestorage.googleapis.com/v0/b/theblackwomanhistory.appspot.com/o/9d601dc0-56ed-11e8-a098-e1c5d0edce44-download%20(3).jpg?alt=media&token=48d81a18-52c8-4230-aaca-752bde1dc7e9'
-        }
-      }
-      'order': 2,
-      'slug': 'tia-ciata',
-      'title': 'Tia Ciata'
-    }
- }
-
-module.exports = {maravilhosas}
-
+module.exports = {
+  maravilhosas
+}
