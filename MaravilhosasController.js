@@ -1,24 +1,28 @@
-const repository = require('./MaravilhosasRepository')
+const repository = require('./maravilhosasRepository')
 
-const get = () => {
+const getAll = () => {
   return repository.maravilhosas
 }
 
 const add = (mulher) => {
-  mulher.id = Math.random().toString(36).substr(-8)
-  get().maravilhosas.push(mulher)
+  if (!mulher.id) {
+    mulher.id = Math.random().toString(36).substr(-8)
+  }
+  getAll().content.push(mulher)
+
+  return mulher
 }
 
 const remove = (id) => {
-  let maravilhosasQueFicaram = get()
+  let todasMaravilhosas = getAll()
 
-  get().maravilhosas = maravilhosasQueFicaram.comidas.filter((mulher) => {
+  getAll().content = todasMaravilhosas.content.filter((mulher) => {
     return mulher.id !== id
   })
 }
 
 module.exports = {
-  get,
+  getAll,
   add,
   remove
 }
