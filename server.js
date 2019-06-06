@@ -1,15 +1,14 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const controller = require('./MaravilhosasController')
-
-controller.get()
+const config = require('./config')
+const controller = require('./maravilhosasController')
 
 const app = express()
-app.use(cors())
-app.use(bodyParser.json())
 
-app.get('/maravilhosa/m-de-maravilhosa-integracao-api', (req, res) => {
+app.use(cors())
+
+app.get('./', (req, res) => {
   const help = `
   <pre>
     Welcome to the Women API!
@@ -29,18 +28,18 @@ app.get('/maravilhosa/m-de-maravilhosa-integracao-api', (req, res) => {
   res.send(help)
 })
 
-app.get('/maravilhosa/m-de-maravilhosa-integracao-api', (req, res) => {
-  res.send(controller.get(req.token))
+app.get('/maravilhosas', (req, res) => {
+  res.send(controller.getAll())
 })
 
-app.post('/maravilhosa/m-de-maravilhosa-integracao-api', bodyParser.json(), (req, res) => {
-  res.send(controller.add(req.token, req.body))
+app.delete('/maravilhosas/:id', (req, res) => {
+  res.send(controller.remove(req.params.id))
 })
 
-app.delete('/maravilhosa/m-de-maravilhosa-integracao-api/:id', (req, res) => {
-  res.send(controller.remove(req.token, req.params.id))
+app.post('/maravilhosas', bodyParser.json(), (req, res) => {
+  res.send(controller.add(req.body))
 })
 
-app.listen(5001, () => {
-  console.log('Server listening on port 5001, Ctrl+C to stop', 5001)
+app.listen(config.port, () => {
+  console.log('Server listening on port %, Ctrl+C to stop', config.port)
 })
